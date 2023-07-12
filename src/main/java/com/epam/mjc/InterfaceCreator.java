@@ -30,7 +30,7 @@ public class InterfaceCreator {
         return () -> values
                 .stream()
                 .filter(
-                        a -> a.matches("^[A-Z]\\S*(\\s+\\S+){3,}\\.$")
+                        a -> a.matches("^[A-Z]\\S*(\\s+\\S+){3}.*\\.$")
                 )
                 .collect(Collectors.toList());
     }
